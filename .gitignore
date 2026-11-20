@@ -1,0 +1,18 @@
+# Binaries
+/netlens
+/netlens.exe
+/dist/
+
+# Captures: real traffic is personal data. Only testdata/sample.pcap (synthetic) is tracked.
+*.pcap
+*.pcapng
+!testdata/sample.pcap
+
+# Fuzzing corpus produced locally
+internal/**/testdata/fuzz/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
